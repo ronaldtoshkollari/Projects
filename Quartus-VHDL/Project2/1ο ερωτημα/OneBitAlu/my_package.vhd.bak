@@ -1,0 +1,105 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+PACKAGE basic_func IS
+	--AND declaration
+	COMPONENT myAND2
+		PORT(a,b : IN std_logic;
+			  m0 : OUT std_logic);
+	END COMPONENT;
+	
+	--OR declaration
+	COMPONENT myOR2
+		PORT(a,b : IN std_logic;
+			  m1 : OUT std_logic);
+	END COMPONENT;
+	--fulladd declaration
+	COMPONENT fulladd 
+		PORT(a,b,Cin : IN std_logic;
+			  Cout,m2 : OUT std_logic);
+	END COMPONENT;
+	--XOR declaration
+	COMPONENT myXOR2
+		PORT(a,b : IN std_logic;
+			  m3 : OUT std_logic);
+	END COMPONENT;
+	--MUX2to1 declaration
+	COMPONENT mux2to1
+		PORT(a,nota,Ain : IN std_logic;
+			  m0 :OUT std_logic);
+	END COMPONENT;
+	--MUX4to1 declaration
+	COMPONENT mux4to1
+		PORT(m0,m1,m2,m3 : IN std_logic;
+			  Op : IN std_logic_vector(1 DOWNTO 0);
+			  res : OUT std_logic);
+	END COMPONENT;
+END PACKAGE basic_func;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+PACKAGE BODY basic_func IS
+	--myAND gate
+	ENTITY myAND2 IS
+		PORT(a,b : IN std_logic;
+			  m0 : OUT std_logic);
+	END myAND2;
+	ARCHITECTURE model_conc OF myAND2 IS
+	BEGIN
+		m0 <= a AND b;
+	END model_conc;
+	--myOR gate
+	ENTITY myOR2 IS
+		PORT(a,b : IN std_logic;
+			  m1 : OUT std_logic);
+	END myOR2;
+	ARCHITECTURE model_conc1 OF myOR2 IS
+	BEGIN
+		m1 <= a OR b;
+	END model_conc1;
+	--fulladd gate
+	ENTITY fulladd IS
+		PORT(a,b,Cin : IN std_logic;
+			  Cout,m2 : OUT std_logic);
+	END fulladd;
+	ARCHITECTURE model_conc2 OF fulladd IS
+	BEGIN
+		Cout <= (b * Cin) + (a * Cin) + (a * b);
+		m2 <= (a * NOT b * NOT Cin) + (NOT a * b * NOT Cin) + (NOT a * NOT b * Cin) + (a * b * Cin);
+	END model_conc2;
+	--myXOR gate
+	ENTITY myXOR2 IS
+		PORT(a,b : IN std_logic;
+			  m3 : OUT std_logic);
+	END myXOR2;
+	ARCHITECTURE model_conc3 OF myXOR2 IS 
+	BEGIN
+		m3 <= (a * NOT b) OR (NOT a * b);
+	END model_conc3;	
+	--mux2to1 gate
+	ENTITY mux2to1 IS 
+		PORT(w0,w1,s : IN std_logic;
+			  m : OUT std_logic);
+	END mux2to1;
+	ARCHITECTURE model_conc4 OF mux2to1 IS
+	BEGIN
+		WITH s SELECT
+			m <= w0 WHEN "0",
+					 WHEN OTHERS;
+	END model_conc4;
+	--mux4to1 gate
+	ENTITY mux4to1 IS
+		PORT(w0,w1,w2,w3 : IN std_logic;
+			  Op : IN std_logic_vector(1 DOWNTO 0);
+			  res : OUT std_logic);
+	END mux4to1;
+	ARCHITECTURE model_conc5 OF mux4to1 IS
+	BEGIN
+		WITH Op SELECT
+			res <= w0 WHEN "00",
+			       w1 WHEN "01",
+					 w2 WHEN "10",
+					 w3 WHEN OTHERS;
+	END model_conc5;
+END PACKAGE BODY basic_func;

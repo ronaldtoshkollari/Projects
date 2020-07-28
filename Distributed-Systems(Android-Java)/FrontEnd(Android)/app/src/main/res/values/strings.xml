@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SRV_SPOTIFY</string>
+    <string name="title_activity_artist__song__list">Artist_Song_List</string>
+    <string name="textview1">TextView</string>
+    <string name="textview2">TextView</string>
+    <string name="textview3">TextView</string>
+    <string name="textview4">TextView</string>
+    <string name="saved_songs">Saved Songs</string>
+    <string name="textviewas1">TextView</string>
+    <string name="textviewals1">TextView</string>
+    <string name="playals1">PLAY</string>
+    <string name="pauseals1">PAUSE</string>
+    <string name="artistalss1">Artist</string>
+    <string name="songalss1">Song</string>
+    <string name="playalss1">PLAY</string>
+    <string name="pausealss1">PAUSE</string>
+    <string name="savealss1">SAVE</string>
+    <string name="saved_songssv1">Saved songs</string>
+    <string name="deletebtn">Delete Song</string>
+</resources>

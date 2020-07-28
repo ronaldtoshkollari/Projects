@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+    <link rel="icon" href="img/logo.jpg" />
+
+    <script src="scripts/index.js"></script>
+    <title>Video Club</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav class="navbar">
+        <div class="burger-menu">
+          <span class="burger-1"></span>
+          <span class="burger-2"></span>
+          <span class="burger-3"></span>
+        </div>
+
+        <div class="nav-links">
+          <i class="fa fa-arrow-left nav-back"></i>
+          <a class="nav-item" href="">Αρχική</a>
+          <a class="nav-item" href="#details">Δες τις πρεμιέρες με ένα κλικ</a>
+          <a class="nav-item" href="#login-menu">Σύνδεση / Εγγραφή</a>
+        </div>
+      </nav>
+
+      <!-- Main -->
+      <main>
+        <!-- Section A -->
+        <section class="section-a">
+          <div class="section-a-text">
+            <h3>Μάθε όσα πρέπει να ξέρεις για τις αγαπημένες σου ταινίες.</h3>
+            <p>
+              Το νέο αυτό web app θα γίνει ένα απ' τα πιο χρήσιμα εργαλεία που
+              είχες ποτέ. Πλήρως ενημερωμένο κάθε στιγμή, ώστε να μάθεις όσα
+              πρέπει για κάθε πρεμιέρα.
+            </p>
+          </div>
+
+          <div class="section-a-carousel">
+            <div class="carousel">
+              <div class="carousel-item hidden">
+                <div class="carousel-item-title">
+                  Deadpool
+                </div>
+
+                <div class="carousel-item-image">
+                  <img src="img/deadpool.jpg" />
+                </div>
+              </div>
+
+              <div class="carousel-item hidden">
+                <div class="carousel-item-title">
+                  Captain America
+                </div>
+
+                <div class="carousel-item-image">
+                  <img src="img/captainAmerica.jpg" />
+                </div>
+              </div>
+
+              <div class="carousel-item hidden">
+                <div class="carousel-item-title">
+                  Dare Devil
+                </div>
+
+                <div class="carousel-item-image">
+                  <img src="img/dareDevil.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section b -->
+        <section class="section-b">
+          <div id="details">
+            <div class="detail-item">
+              <h2><span>Βήμα πρώτο</span></h2>
+              <label>Δημιουργείς λογαριασμό</label>
+              <p>
+                Θα αποστέλλουμε στο email που θα συμπληρώσεις ενημερώσεις για
+                τις νέες πρεμιέρες. Σε οποιαδήποτε περίπτωση μπορείς να δηλώσεις
+                ότι δε θες να ενημερώνεσαι πλέον.
+              </p>
+              <i class="fa fa-check"></i>
+            </div>
+
+            <div class="detail-item">
+              <h2><span>Βήμα δεύτερο</span></h2>
+              <label>Επιλέγεις το όνομα της ταινίας που σε ενδιαφέρει</label>
+              <p>
+                Έχουμε κατασκευάσει μια ισχυρή μηχανή αναζήτησης ώστε να μπορεί
+                πάντα να σου επιστρέψει την σωστή ταινία
+              </p>
+              <i class="fa fa-check"></i>
+            </div>
+
+            <div class="detail-item">
+              <h2><span>Βήμα τρίτο</span></h2>
+              <label>Αποθηκεύεις την ταινία</label>
+              <p>
+                Έχεις απεριόριστο χώρο ώστε να σώζεις όποια ταινία σε
+                ενδιαφέρει.
+              </p>
+              <i class="fa fa-check"></i>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section C -->
+        <section class="section-c">
+          <div class="flex-container">
+            <div id="login-menu" class="login-menu">
+              <form method="POST">
+                <div class="login-menu-item">
+                  <label class="field-label hidden"
+                    >Υποχρεωτικό πεδίο<sup>*</sup></label
+                  >
+                  <input
+                    type="text"
+                    class="field"
+                    id="username-field"
+                    placeholder="Όνομα Χρήστη"
+                  />
+                </div>
+
+                <div class="login-menu-item">
+                  <label class="field-label hidden"
+                    >Υποχρεωτικό πεδίο<sup>*</sup></label
+                  >
+                  <input
+                    type="password"
+                    class="field"
+                    id="password-field"
+                    placeholder="Κωδικός"
+                  />
+                </div>
+
+                <div class="login-menu-item">
+                  <input
+                    type="submit"
+                    class="field btn btn-success"
+                    id="login-btn"
+                    value="Είσοδος"
+                  />
+                </div>
+              </form>
+
+              <h4 onmouseover="this.style.cursor = 'pointer';">
+                Δημιουργία νέου λογαριασμού
+              </h4>
+            </div>
+
+            <div class="login-menu hidden">
+              <button class="btn btn-back">
+                <i class="fa fa-arrow-circle-o-left fa-lg"></i>
+              </button>
+              <br />
+
+              <form method="POST" action="">
+                <div class="login-group">
+                  <input
+                    type="text"
+                    class="field"
+                    id="first-name-field"
+                    placeholder="Όνομα"
+                  />
+                  <input
+                    type="text"
+                    class="field"
+                    id="last-name-field"
+                    placeholder="Επίθετο"
+                  />
+                </div>
+
+                <div class="login-menu-item">
+                  <label class="field-label hidden"
+                    >Υποχρεωτικό πεδίο<sup>*</sup></label
+                  >
+                  <input
+                    type="email"
+                    class="field"
+                    id="email-field"
+                    placeholder="email"
+                  />
+                </div>
+
+                <div class="login-menu-item">
+                  <label class="field-label hidden"
+                    >Υποχρεωτικό πεδίο<sup>*</sup></label
+                  >
+                  <input
+                    type="text"
+                    class="field"
+                    id="new-username-field"
+                    placeholder="Όνομα Χρήστη"
+                  />
+                </div>
+
+                <div class="login-menu-item">
+                  <label class="field-label hidden"
+                    >Υποχρεωτικό πεδίο<sup>*</sup></label
+                  >
+                  <input
+                    type="password"
+                    class="field"
+                    id="new-password-field"
+                    placeholder="Κωδικός"
+                  />
+                </div>
+
+                <div class="login-menu-item">
+                  <input
+                    type="submit"
+                    class="field btn btn-success"
+                    id="signup-btn"
+                    value="Εγγραφή"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-text">
+          <h2>
+            <span class="footer-text-span">
+              &copy; Mady by Jim & Roni.
+            </span>
+          </h2>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

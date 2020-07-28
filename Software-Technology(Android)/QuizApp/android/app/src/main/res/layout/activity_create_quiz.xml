@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.create_quiz.CreateQuizChallengeActivity">
+
+    <TextView
+        android:id="@+id/createQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:text="Δημιουργία Quiz"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/opponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80px"
+        android:ems="10"
+        android:hint="Αντίπαλος"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createQuiz" />
+
+    <TextView
+        android:id="@+id/difficultyLvlGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Επίπεδο Δυσκολίας"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/opponent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difficultyLvlGroup">
+
+        <RadioButton
+            android:id="@+id/easyRadioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="Easy" />
+
+        <RadioButton
+            android:id="@+id/mediumRadioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/hardRadioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hard" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:text="Κατηγορία"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/categoryGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <RadioButton
+            android:id="@+id/sportsRadioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:text="Sports" />
+
+        <RadioButton
+            android:id="@+id/geographyRadioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Geography" />
+
+        <RadioButton
+            android:id="@+id/politicsRadioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Politics" />
+
+        <RadioButton
+            android:id="@+id/historyRadioBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="History" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:onClick="onCreateQuizChallengeClick"
+        android:padding="10px"
+        android:text="Δημιουργία Πρόκλησης"
+        android:textColor="#F8F8F8"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryGroup" />
+
+    <TextView
+        android:id="@+id/playerUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="player"
+        android:textColor="#4CAF50"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/createQuiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

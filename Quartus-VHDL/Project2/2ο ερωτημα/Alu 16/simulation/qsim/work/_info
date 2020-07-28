@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\user\Desktop\Alu 16\simulation\qsim
+vSixteenBitAlu
+Z1 !s100 :D[OGWF83_O^[DND97Oj_3
+Z2 IR^4n5L3n9UU<1SLo;gR]63
+Z3 VEME6GV:b6B[;?bVkSZMWH2
+Z4 dC:\Users\user\Desktop\Alu 16\simulation\qsim
+Z5 w1495226328
+Z6 8SixteenBitAlu.vo
+Z7 FSixteenBitAlu.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|SixteenBitAlu.vo|
+Z10 o-work work -O0
+Z11 n@sixteen@bit@alu
+!i10b 1
+!s85 0
+Z12 !s108 1495226329.600000
+Z13 !s107 SixteenBitAlu.vo|
+!s101 -O0
+vSixteenBitAlu_vlg_check_tst
+!i10b 1
+Z14 !s100 o41HoSDQS_Xd0BMoi[X>_3
+Z15 I=QEI_0W`aJCSCMg7fDofC2
+Z16 Vflg:Ook?gSAo>8RY[37eX3
+R4
+Z17 w1495226327
+Z18 8SixteenBitAlu.vt
+Z19 FSixteenBitAlu.vt
+L0 69
+R8
+r1
+!s85 0
+31
+Z20 !s108 1495226329.866000
+Z21 !s107 SixteenBitAlu.vt|
+Z22 !s90 -work|work|SixteenBitAlu.vt|
+!s101 -O0
+R10
+Z23 n@sixteen@bit@alu_vlg_check_tst
+vSixteenBitAlu_vlg_sample_tst
+!i10b 1
+Z24 !s100 @KS>TamoPibS?;jPi4oVR3
+Z25 IOJCN=75h:>hK;5ES==>JM2
+Z26 V^L3n5Jn4MTl8P4LGaA[Pz1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@sixteen@bit@alu_vlg_sample_tst
+vSixteenBitAlu_vlg_vec_tst
+!i10b 1
+!s100 [>2FkY6bGK3`ID8i0cRWd0
+I_IgeQ8@F1CJfOTaM5oQ0M3
+Z28 VITeF55D`_mSeEleH5FDHV3
+R4
+R17
+R18
+R19
+Z29 L0 649
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@sixteen@bit@alu_vlg_vec_tst

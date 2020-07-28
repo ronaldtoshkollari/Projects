@@ -1,0 +1,77 @@
+|OneBitAlu
+a => mux2to1:U0.in1
+b => mux2to1:U1.in1
+Cin => fulladd:U4.in3
+Ain => mux2to1:U0.in2
+Bin => mux2to1:U1.in2
+Op[0] => mux4to1:U6.s[0]
+Op[1] => mux4to1:U6.s[1]
+Cout <= fulladd:U4.out1
+res <= mux4to1:U6.f
+
+
+|OneBitAlu|mux2to1:U0
+in1 => out1.DATAA
+in1 => out1.DATAB
+in2 => out1.OUTPUTSELECT
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|OneBitAlu|mux2to1:U1
+in1 => out1.DATAA
+in1 => out1.DATAB
+in2 => out1.OUTPUTSELECT
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|OneBitAlu|myAND2:U2
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|OneBitAlu|myOR2:U3
+in1 => out1.IN0
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|OneBitAlu|fulladd:U4
+in1 => out1.IN0
+in1 => out1.IN0
+in1 => out2.IN0
+in1 => out2.IN0
+in1 => out2.IN0
+in2 => out1.IN0
+in2 => out1.IN1
+in2 => out2.IN1
+in2 => out2.IN1
+in2 => out2.IN1
+in3 => out1.IN1
+in3 => out1.IN1
+in3 => out2.IN1
+in3 => out2.IN1
+in3 => out2.IN1
+in3 => out2.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= out2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|OneBitAlu|myXOR2:U5
+in1 => out1.IN0
+in1 => out1.IN0
+in2 => out1.IN1
+in2 => out1.IN1
+out1 <= out1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|OneBitAlu|mux4to1:U6
+in1 => Mux0.IN0
+in2 => Mux0.IN1
+in3 => Mux0.IN2
+in4 => Mux0.IN3
+s[0] => Mux0.IN5
+s[1] => Mux0.IN4
+f <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

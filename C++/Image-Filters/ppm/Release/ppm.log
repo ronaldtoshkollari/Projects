@@ -1,0 +1,5 @@
+﻿  stdafx.cpp
+  ppm.cpp
+c:\users\p3160244\source\repos\project1\ppm\ppm.cpp(100): warning C4018: '<': signed/unsigned mismatch
+c:\users\p3160244\source\repos\project1\ppm\ppm.cpp(102): warning C4244: '=': conversion from 'float' to 'char', possible loss of data
+  ppm.vcxproj -> C:\Users\p3160244\source\repos\Project1\ppm\ppm.lib

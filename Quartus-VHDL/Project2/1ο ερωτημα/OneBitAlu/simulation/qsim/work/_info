@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hp\Documents\OneBitAlu\simulation\qsim
+vOneBitAlu
+Z1 !s100 KdbR2fg0@4igGJ^LVinTg3
+Z2 I?[W5SUPWzXXRJ2KHo4b3R2
+Z3 VilX9Ri:lC^jFbI5eF3dVM2
+Z4 dC:\Users\hp\Documents\OneBitAlu\simulation\qsim
+Z5 w1495135508
+Z6 8OneBitAlu.vo
+Z7 FOneBitAlu.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|OneBitAlu.vo|
+Z10 o-work work -O0
+Z11 n@one@bit@alu
+!i10b 1
+!s85 0
+Z12 !s108 1495135509.363000
+Z13 !s107 OneBitAlu.vo|
+!s101 -O0
+vOneBitAlu_vlg_check_tst
+!i10b 1
+Z14 !s100 4AG4h0P>F:kgZIgJnh8>H0
+Z15 IQ5iAVYf]UAhRlYDZD<gZK1
+Z16 VliAB@LP@_6QKB7=m@U=`@2
+R4
+Z17 w1495135507
+Z18 8OneBitAlu.vt
+Z19 FOneBitAlu.vt
+L0 67
+R8
+r1
+!s85 0
+31
+Z20 !s108 1495135509.597000
+Z21 !s107 OneBitAlu.vt|
+Z22 !s90 -work|work|OneBitAlu.vt|
+!s101 -O0
+R10
+Z23 n@one@bit@alu_vlg_check_tst
+vOneBitAlu_vlg_sample_tst
+!i10b 1
+Z24 !s100 N>MP:zzRoCY2hcShJ3mMb3
+Z25 Ik?1R?cAj99eiSE2zBA=dP3
+Z26 VP>L>S2Lg8MJT@SNbL`Y0I1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@one@bit@alu_vlg_sample_tst
+vOneBitAlu_vlg_vec_tst
+!i10b 1
+!s100 mielNhlXl=Nk2NAGO@BeC3
+I33MWYmVCm2zOhz[;Z@oM10
+Z28 V1<j;<kYLNYdjifJj9QXm11
+R4
+R17
+R18
+R19
+Z29 L0 167
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@one@bit@alu_vlg_vec_tst

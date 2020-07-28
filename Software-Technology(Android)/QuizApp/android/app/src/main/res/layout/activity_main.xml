@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.home.HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/playerUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="player"
+        android:textColor="#4CAF50"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <Button
+        android:id="@+id/createQuizBtn"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="84dp"
+        android:background="#F8B57E"
+        android:onClick="onClickCreateQuiz"
+        android:text="Δημιουργία Quiz"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playerUsername" />
+
+    <Button
+        android:id="@+id/replyChallengeBtn"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#F8B57E"
+        android:onClick="onClickReplyChallenge"
+        android:text="Απάντηση Πρόκλησης"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createQuizBtn" />
+
+    <Button
+        android:id="@+id/leaderboardBtn"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#F8B57E"
+        android:onClick="onClickShowLeaderboard"
+        android:text="Κατατάξεις"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/replyChallengeBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

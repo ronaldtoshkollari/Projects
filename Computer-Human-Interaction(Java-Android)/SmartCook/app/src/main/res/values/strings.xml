@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SmartCook</string>
+    <string name="connected_status">Connected to microwave</string>
+    <string name="welcome_text">Welcome to SmartCook</string>
+    <string name="tts_info">For speech-to-text instructions swipe right or press the microphone and say \"open microwave\"".</string>
+    <string name="manual_info">If you want to give manual instructions press the button below.</string>
+    <string name="title_activity_manual">Smart Cook</string>
+    <string name="time_instructions">Please select cook time (max time 90 minutes).</string>
+    <string name="timer">Timer</string>
+    <string name="power">Power</string>
+    <string name="power_instructions">Please select heat power.</string>
+    <string name="manual_settings">Manual Settings</string>
+</resources>

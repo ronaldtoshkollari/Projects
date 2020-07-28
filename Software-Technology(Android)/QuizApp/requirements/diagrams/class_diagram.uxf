@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>246</x>
+      <y>258</y>
+      <w>264</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>User
+--
+- username: String
+- password: String
+- e-mail: String
+--
++ getUsername(): String
++ setUsername(username: String): void
++ getPassword(): String
++ setPassword(password: String): void
++ getEmail(): String
++ setEmail(email: String): void
++ logIn(username: String, password: String): boolean
++ logOut(email: String): boolean
++ register(username: String, password: String, email: String): boolean
++ modify(username: String, password: String): boolean
++ deleteAcount(email: String): Boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>966</x>
+      <y>312</y>
+      <w>186</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes>Question
+-
+- questionId: int
+- quiz: Quiz
+- category: QuizCategory
+- level: DifficultyLevel
+- question: String
+- correctAnswer: String
+--
++ getQuestionId(): int
++ setQuestionId(questionId: int): void
++ getQuiz(): Quiz
++ setQuiz(quiz: Quiz): void
++ getCategory(): QuizCategory
++ setCategory(category: QuizCategory): void
++ getLevel(): DifficultyLevel
++ setLevel(level: DifficultyLevel): void
++ getQuestion(): Question
++ setQuestion(question: String): void
++ getCorrectAnswer(): String
++ setCorrectAnswer(correctAnswer: String): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>882</x>
+      <y>570</y>
+      <w>294</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>Quiz
+--
+- quizId: int
+- startDate: DateTime
+- /duration: int
+- questions: List&lt;Question&gt; 
+- url: String
+--
++ getQuizId(): int
++ setQuizId(quizId: int): void
++ getStartDate(): DateTime
++ setStartDate(startDate: DateTime): void
++ getDuration(): int
++ addDuration(duration: int): void
++ getQuestions(): List&lt;Question&gt;
++ setQuestions(questions: List&lt;Question&gt;): void
++ addQuestion(question: Question): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1056</x>
+      <y>540</y>
+      <w>24</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>20
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1038</x>
+      <y>756</y>
+      <w>120</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>DateTime
+--
+- day: int
+- month: int
+- year: int
+- hour: int
+- minutes: int
+- seconds: int
+--
++ getDateTime(): String{query}
++ setCurrentDate()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>510</y>
+      <w>378</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>Player
+--
+- firstName: String
+- lastName: String
+- gender: String
+- favoriteCategory: QuizCategory
+--
++ getFirstName(): String
++ setFirstName(firstName: String): void
++ getLastName(): String
++ setLastName(lastName: String): void
++ getGender(): String
++ setGender(gender: String): void
++ getFavoriteCategory(): QuizCategory
++ setFavoriteCategory(favoriteCategory: QuizCategory): void
++ createQuizChallenge(category: String, difficultyLevel: String, participant: Player): QuizChallenge
++ acceptQuizChallenge(player: Player, challenge: QuizChallenge): QuizChallenge
++ rejectQuizChallenge(player: Player, challenge: QuizChallenge): QuizChallenge
++ showRank(category: String, level: String): List&lt;Player&gt;
++ showPendingChallenges(): List&lt;QuizChallenge&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>372</x>
+      <y>414</y>
+      <w>18</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>504</y>
+      <w>18</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1014</x>
+      <y>918</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>DifficultyLevel
+--
+- difficulty: String
+- difficultyLevels: String[]
+--
++ getDifficultyLevel(): String
++ setDifficultyLevel(difficultyLevel:String ): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>600</x>
+      <y>900</y>
+      <w>192</w>
+      <h>258</h>
+    </coordinates>
+    <panel_attributes>QuizChallenge
+-
+- quizChallengeId: int
+- quiz: Quiz
+- initiator: Player
+- participant: Player
+- /accepted: boolean
+- date: DateTime
+- level: DifficultyLevel
+- category: QuizCategory
+-
++ getQuizChallengeId(): int
++ setQuizChallengeId(quizChallengeId: int): void
++ getQuiz(): Quiz
++ setQuiz(quiz: Quiz): void
++ getInitiator(): Player
++ setInitiator(initiator: Player): void
++ getParticipant(): Player
++ setParticipant(participant: Player): void
++ isAccepted(): boolean
++ setAccepted(accepted: boolean): void
++ getDate(): DateTime
++ setDate(date: DateTime): void
++ getLevel(): DifficultyLevel
++ setLevel(level: DifficultyLevel): void
++ getCategory(): QuizCategory
++ setCategory(category: QuizCategory): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1014</x>
+      <y>1014</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>QuizCategory
+--
+- category: String
+- quizCategories: String[]
+--
++ getCategory(): String
++ setCategory(category: String): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>696</y>
+      <w>288</w>
+      <h>306</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+participant to &gt;</panel_attributes>
+    <additional_attributes>460.0;480.0;10.0;480.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>786</x>
+      <y>1038</y>
+      <w>240</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+has &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;380.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>696</x>
+      <y>660</y>
+      <w>198</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1
+starts &gt;</panel_attributes>
+    <additional_attributes>10.0;400.0;10.0;10.0;310.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>672</x>
+      <y>222</y>
+      <w>216</w>
+      <h>228</h>
+    </coordinates>
+    <panel_attributes>QuizParticipation
+-
+- quizPartitionId: int
+- quiz: Quiz
+- player: Player
+- answers: List&lt;Answer&gt;
+- /secondsPlayed: int
+- /correctAnswers: int
+- /winner: boolean
+-
++ getQuizParticipationId(): int
++ setQuizParticipationId(quizParticipationId: int): void
++ getQuiz(): Quiz
++ setQuiz(quiz: Quiz): void
++ getPlayer(): Player
++ setPlayer(player: Player): void
++ getAnswers(): List&lt;Answer&gt;
++ setAnswers(answers: List&lt;Answer&gt;): void
++ getSecondsPlayed(): int
++ setSecondsPlayed(secondsPlayed: int): void
++ getCorrectAnswers(): int
++ setCorrectAnswers(correctAnswers: int): void
++ isWinner(): boolean
++ setWinner(winner: boolean): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>0</y>
+      <w>162</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>Answer
+-
+- answerId: int
+- question: Question
+- answer: String
+- correct: boolean
+--
++ getAnswerId(): int
++ setAnswerId(answerId: int): void
++ getQuestion(): Question
++ setQuestion(question: Question): void
++ getAnswer(): String
++ setAnswer(answer: String): void
++ isCorrect(): boolean
++ setCorrect(correct: boolean): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>786</x>
+      <y>954</y>
+      <w>240</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+has &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;380.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>870</x>
+      <y>42</y>
+      <w>162</w>
+      <h>282</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>250.0;450.0;250.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>882</x>
+      <y>60</y>
+      <w>24</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>4
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>612</x>
+      <y>444</y>
+      <w>126</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>1
+</panel_attributes>
+    <additional_attributes>10.0;180.0;190.0;180.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>714</x>
+      <y>456</y>
+      <w>30</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>798</x>
+      <y>444</y>
+      <w>96</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>140.0;260.0;10.0;260.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>264</x>
+      <y>696</y>
+      <w>816</w>
+      <h>510</h>
+    </coordinates>
+    <panel_attributes>
+</panel_attributes>
+    <additional_attributes>1340.0;630.0;1340.0;820.0;10.0;820.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>258</x>
+      <y>708</y>
+      <w>30</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>768</x>
+      <y>132</y>
+      <w>18</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>762</x>
+      <y>144</y>
+      <w>18</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>*
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1146</x>
+      <y>420</y>
+      <w>144</w>
+      <h>540</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;220.0;10.0;220.0;880.0;80.0;880.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1146</x>
+      <y>390</y>
+      <w>198</w>
+      <h>672</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;300.0;10.0;310.0;1100.0;80.0;1100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>792</x>
+      <y>456</y>
+      <w>30</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>2
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>786</x>
+      <y>786</y>
+      <w>264</w>
+      <h>138</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+has &gt;</panel_attributes>
+    <additional_attributes>10.0;200.0;200.0;200.0;200.0;10.0;420.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>696</y>
+      <w>222</w>
+      <h>258</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+initiator to &gt;</panel_attributes>
+    <additional_attributes>350.0;400.0;10.0;400.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>1068</x>
+      <y>1074</y>
+      <w>24</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>1
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

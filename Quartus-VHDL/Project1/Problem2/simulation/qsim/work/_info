@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\hp\Desktop\Ergasia\quartus\Problem2\simulation\qsim
+vlab3
+Z1 IgY>3]a[zdATn?o3Hn=@YT3
+Z2 Vd<^;5g=5;I:mh^_TI::i;1
+Z3 dC:\Users\hp\Desktop\Ergasia\quartus\Problem2\simulation\qsim
+Z4 w1491559955
+Z5 8lab3.vo
+Z6 Flab3.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 mL[VGg81cA1;Jf4GB^JRD0
+!s85 0
+Z10 !s108 1491559958.018000
+Z11 !s107 lab3.vo|
+Z12 !s90 -work|work|lab3.vo|
+!s101 -O0
+vlab3_vlg_check_tst
+!i10b 1
+!s100 JE302:zVWMhBg>k;BPChM0
+IcZzmD4QQ0?;IYmO;G>Vj:0
+VHTm`PW?aQ<fXOg]69Wbl83
+R3
+Z13 w1491559954
+Z14 8lab3.vt
+Z15 Flab3.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z16 !s108 1491559958.295000
+Z17 !s107 lab3.vt|
+Z18 !s90 -work|work|lab3.vt|
+!s101 -O0
+R8
+vlab3_vlg_sample_tst
+!i10b 1
+!s100 m>z;QS2=PTnEjJN50SbQ61
+IiE@V6cdG]S5C?^75:X`lT2
+VTQh=F5=c?4PdFPF:X0AmZ0
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vlab3_vlg_vec_tst
+!i10b 1
+!s100 dH@<kgX86Z`UIV7mj@dc_0
+I`zdO58loaYSj[HFko4Mn52
+Vm>TFY<<QB3WBRa>cCKI@j1
+R3
+R13
+R14
+R15
+L0 158
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

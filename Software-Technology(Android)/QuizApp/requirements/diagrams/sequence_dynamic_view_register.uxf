@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>77</x>
+      <y>7</y>
+      <w>56</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>:Χρήστης</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>308</x>
+      <y>49</y>
+      <w>91</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>_:CreateAccountUI_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>532</x>
+      <y>49</y>
+      <w>98</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>_:SignUpController_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>784</x>
+      <y>49</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>_:User_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>98</x>
+      <y>70</y>
+      <w>21</w>
+      <h>574</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;800.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>343</x>
+      <y>63</y>
+      <w>21</w>
+      <h>581</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;810.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>574</x>
+      <y>63</y>
+      <w>21</w>
+      <h>574</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;800.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>812</x>
+      <y>63</y>
+      <w>21</w>
+      <h>574</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;800.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>98</x>
+      <y>112</y>
+      <w>259</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+Εισαγωγή Προσωπικών Πληροφοριών</panel_attributes>
+    <additional_attributes>10.0;20.0;350.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>343</x>
+      <y>126</y>
+      <w>245</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+reply = isEmailUsed(email)</panel_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>56</x>
+      <y>385</y>
+      <w>567</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>interaction frame
+--
+halign=left
+[if there is a user
+with this username]
+
+
+
+
+-.
+[else]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>196</y>
+      <w>245</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+reply = true</panel_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>287</y>
+      <w>245</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+reply = false</panel_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>574</x>
+      <y>147</y>
+      <w>252</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+getUserWithEmail(email)</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>182</y>
+      <w>252</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+user</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>273</y>
+      <w>252</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+null</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>98</x>
+      <y>210</y>
+      <w>266</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+printRegisterErrorMsg()</panel_attributes>
+    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>98</x>
+      <y>308</y>
+      <w>259</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+Εισαγωγή Στοιχείων Πρόσβασης</panel_attributes>
+    <additional_attributes>10.0;20.0;350.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>322</y>
+      <w>238</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+reply = isUsernameUsed(username)</panel_attributes>
+    <additional_attributes>10.0;20.0;320.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>14</x>
+      <y>182</y>
+      <w>840</w>
+      <h>406</h>
+    </coordinates>
+    <panel_attributes>interaction frame
+--
+halign=left
+[if there is a user
+with this email]
+
+
+
+
+-.
+[else]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>322</y>
+      <w>245</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+getUserWithUsername(username)</panel_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>385</y>
+      <w>252</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+user</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>476</y>
+      <w>252</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+null</panel_attributes>
+    <additional_attributes>10.0;20.0;340.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>399</y>
+      <w>245</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+reply = true</panel_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>490</y>
+      <w>245</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+reply = false</panel_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>98</x>
+      <y>413</y>
+      <w>266</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+printRegisterErrorMsg()</panel_attributes>
+    <additional_attributes>10.0;20.0;360.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>511</y>
+      <w>322</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+Επικαιροποίηση Στοιχείων</panel_attributes>
+    <additional_attributes>10.0;20.0;440.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>889</x>
+      <y>497</y>
+      <w>112</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Ενημέρωση της βάσης
+δεδομένων</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>98</x>
+      <y>511</y>
+      <w>259</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+Μεταφορά στην αρχική οθόνη</panel_attributes>
+    <additional_attributes>10.0;20.0;350.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>546</y>
+      <w>553</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;770.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>889</x>
+      <y>553</y>
+      <w>98</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>_:PlayerUI_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>343</x>
+      <y>105</y>
+      <w>14</w>
+      <h>511</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>574</x>
+      <y>126</y>
+      <w>14</w>
+      <h>483</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>812</x>
+      <y>154</y>
+      <w>14</w>
+      <h>455</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>931</x>
+      <y>567</y>
+      <w>21</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>931</x>
+      <y>609</y>
+      <w>14</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>type=termination</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

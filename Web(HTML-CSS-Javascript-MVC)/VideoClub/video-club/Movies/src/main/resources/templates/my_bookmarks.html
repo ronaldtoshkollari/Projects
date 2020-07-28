@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+
+    <link rel="icon" href="img/logo.jpg" />
+
+    <script src="/scripts/bookmarks.js"></script>
+
+    <title>My Bookmarks</title>
+  </head>
+  <body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="burger-menu">
+          <span class="burger-1"></span>
+          <span class="burger-2"></span>
+          <span class="burger-3"></span>
+        </div>
+
+        <div class="nav-links">
+          <i class="fa fa-arrow-left nav-back"></i>
+          <a href="/search" class="nav-item">Αναζήτηση</a>
+          <a href="/logout" class="nav-item">Αποσύνδεση</a>
+        </div>
+      </nav>
+
+      <!-- Main -->
+      <section class="section-a-bookmarks">
+        <div class="section-a-bookmarks-text">
+          <h2>Οι Αγαπημένες μου ταινίες</h2>
+        </div>
+
+        <div class="bookmarks-grid"></div>
+        <!-- Modal -->
+        <div class="modal" id="modal_id">
+          <div class="modal-content" style="height:100%; overflow-y:scroll">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2 id="movie-title"></h2>
+            </div>
+            <!-- Modal Body  -->
+            <div class="modal-body">
+              <img
+                      id="movie-poster"
+                      src=""
+                      alt=""
+                      width="350"
+                      height="400"
+              />
+              <p id="movie-year"></p>
+              <p id="movie-rated"></p>
+              <p id="movie-released"></p>
+              <p id="movie-runtime"></p>
+              <p id="movie-genre"></p>
+              <p id="movie-director"></p>
+              <p id="movie-writer"></p>
+              <p id="movie-actors"></p>
+              <p id="movie-plot"></p>
+              <p id="movie-language"></p>
+              <p id="movie-awards"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="search-footer">
+        <div class="footer-text">
+          <h2>
+            <span class="footer-text-span">
+              &copy; Mady by Jim & Roni.
+            </span>
+          </h2>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

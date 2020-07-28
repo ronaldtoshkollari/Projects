@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>4</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>480</y>
+      <w>120</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>LoginActivity
+-
+# onCreate(savedInstanceState: Bundle)
++ onClickLogIn(view: View)
++ onClickStartRegisterActivity(view: View)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>408</x>
+      <y>244</y>
+      <w>64</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>AppCompatActivity</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>112</x>
+      <y>536</y>
+      <w>60</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Inflates&gt;&gt;
+activity_log_in.xml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>176</x>
+      <y>252</y>
+      <w>252</w>
+      <h>236</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>610.0;10.0;10.0;570.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>124</x>
+      <y>420</y>
+      <w>44</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>132</x>
+      <y>508</y>
+      <w>28</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>480</y>
+      <w>64</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>LoginPresenter
+-
++ logIn()
++ startRegisterActivity()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>236</x>
+      <y>484</y>
+      <w>32</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>108</x>
+      <y>320</y>
+      <w>124</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+LoginView
+-
++ getUsername()
++ getPassword()
++ getUsernameRequiredError()
++ getPasswordRequiredError()
++ setUsernameRequiredError(errorMsg: String)
++ setPasswordRequiredError(errorMsg: String)
++ setUsernameRequiredTextViewVisible()
++ setPasswordRequiredTextViewVisible()
++ setUsernameRequiredTextViewInvisible()
++ setPasswordRequiredTextViewInvisible()
++ showToast(message: String)
++ startRegisterActivity()
++ startHomeActivity()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>228</x>
+      <y>352</y>
+      <w>48</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- loginView
+1</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0;100.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>196</x>
+      <y>556</y>
+      <w>84</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+PlayerDao
+-
++ delete(player: Player)
++ findAll(): IEnumerable&lt;Player&gt;
++ save(player: Player)
++ find(username: String)
++ nextId(): Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>208</x>
+      <y>500</y>
+      <w>76</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- playerDao
+1</panel_attributes>
+    <additional_attributes>10.0;140.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>316</x>
+      <y>420</y>
+      <w>108</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>HomeActivity
+-
+# onCreate(savedInstanceState: Bundle)
++ onClickCreateQuiz(view: View)
++ onClickReplyChallenge(view: View)
++ onClickShowLeaderboard(view: View)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>424</x>
+      <y>520</y>
+      <w>80</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+HomeView
+-
++ getUsername(): String
++ setUsername()
++ startCreateQuizActivity()
++ startChallengesActivity()
++ startShowRankActivity()
++ showToast(message: String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>252</y>
+      <w>112</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>260.0;10.0;10.0;420.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>304</x>
+      <y>512</y>
+      <w>60</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Inflates&gt;&gt;
+activity_main.xml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>456</y>
+      <w>28</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;140.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>456</y>
+      <w>56</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>120.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>548</y>
+      <w>60</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>HomePresenter
+-
++ createQuiz()
++ replyChallenge()
++ showLeaderboard()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>372</x>
+      <y>456</y>
+      <w>16</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;230.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>384</x>
+      <y>520</y>
+      <w>48</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- homeView
+1</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>452</x>
+      <y>432</y>
+      <w>108</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>RegisterActivity
+-
+# onCreate(savedInstanceState: Bundle)
++ onClickRegister(view: View)
++ onClickStartLoginActivity(view: View)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>436</x>
+      <y>252</y>
+      <w>44</w>
+      <h>188</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;450.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>516</x>
+      <y>488</y>
+      <w>84</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+RegisterView
+-
++ getUsername(): String
++ getPassword(): String
++ getEmail(): String
++ getFirstName(): String
++ getLastName(): String
++ getFavouriteCategory(): String
++ getGender(): String
++ showToast(message: String)
++ startHomeActivity()
++ startLogin()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>460</y>
+      <w>44</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>90.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>448</x>
+      <y>492</y>
+      <w>60</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Inflates&gt;&gt;
+activity_register.xml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>452</x>
+      <y>460</y>
+      <w>32</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;80.0;60.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>576</x>
+      <y>412</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>RegisterPresenter
+-
++ register()
++ startLoginActivity()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>548</x>
+      <y>416</y>
+      <w>36</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>596</x>
+      <y>432</y>
+      <w>52</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- registerView
+1</panel_attributes>
+    <additional_attributes>10.0;220.0;110.0;220.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>276</x>
+      <y>432</y>
+      <w>384</w>
+      <h>172</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- playerDao
+1</panel_attributes>
+    <additional_attributes>10.0;400.0;940.0;400.0;940.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>532</x>
+      <y>352</y>
+      <w>112</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>CreateQuizChallengeActivity
+-
+# onCreate(savedInstanceState: Bundle)
++ onCreateQuizChallengeClick(view: View)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>448</x>
+      <y>252</y>
+      <w>108</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;250.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>452</y>
+      <w>88</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+CreateQuizChallengeView
+-
++ getOpponent(): String
++ getDifficultyLevel(): String
++ getCategory(): String
++ getUsername(): String
++ setOpponent(opponent: String)
++ setDifficultyLevel(level: String)
++ setCategory(category: String)
++ setUsername()
++ startChallengesActivity()
++ showToast(message: String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>396</y>
+      <w>68</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Inflates&gt;&gt;
+activity_create_quiz.xml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>524</x>
+      <y>372</y>
+      <w>44</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;60.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>368</y>
+      <w>32</w>
+      <h>92</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>60.0;210.0;60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>668</x>
+      <y>308</y>
+      <w>92</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>CreateQuizChallengePresenter
+-
++ initializeQuizChallenge(): Boolean
++ startChallenges()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>640</x>
+      <y>332</y>
+      <w>48</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>100.0;10.0;100.0;80.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>276</x>
+      <y>332</y>
+      <w>488</w>
+      <h>284</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- players
+1</panel_attributes>
+    <additional_attributes>10.0;680.0;1200.0;680.0;1200.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>668</x>
+      <y>392</y>
+      <w>80</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>QuizDAO
+-
++ delete(quiz: Quiz)
++ findAll(): IEnumerable&lt;Quiz&gt;
++ save(quiz: Quiz)
++ find(quizId: Integer)
++ nextId(): Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>704</x>
+      <y>332</y>
+      <w>44</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- quizDAO
+1</panel_attributes>
+    <additional_attributes>10.0;150.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>268</y>
+      <w>108</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>QuizChallengeDAO
+-
++ delete(quizChallenge: QuizChallenge)
++ findAll(): IEnumerable&lt;QuizChallenge&gt;
++ save(quizChallenge: QuizChallenge)
++ find(quizChallengeId): QuizChallenge
++ nextId(): Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>624</x>
+      <y>280</y>
+      <w>76</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- quizChallengeDAO
+1</panel_attributes>
+    <additional_attributes>10.0;20.0;170.0;20.0;170.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>212</x>
+      <y>192</y>
+      <w>120</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>DualActivity
+-
+# onCreate(savedInstanceState: Bundle)
++ onSubmit(view: View)
++ onAnswerClick(view: View)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>328</x>
+      <y>216</y>
+      <w>104</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>240.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>128</y>
+      <w>112</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+DualView
+-
++ getUsername(): String
++ getQuizChallengeId(): Integer
++ getQuestion(): String
++ getAnswer1(): String
++ getAnswer2(): String
++ getAnswer3(): String
++ getAnswer4(): String
++ getClock(): String
++ getCount(): Integer
++ setUsername()
++ setQuestion(q: String)
++ setAnswer1(a1: String)
++ setAnswer2(a2: String)
++ setAnswer3(a3: String)
++ setAnswer4(a4: String)
++ showToast(message: String)
++ setClock(time: String)
++ addCount()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>128</x>
+      <y>180</y>
+      <w>92</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;210.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>184</x>
+      <y>240</y>
+      <w>116</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>DualPresenter
+-
++ initDual()
++ getNextQuestion(questionNum: Integer)
++ submitQuestion(questionIndex: Integer, answerIndex: Integer)
++ calculateScore()
++ getWinner()
++ countdown()
++ cancelTimer()
++ addTotalTime(time: Integer)
++ getQuestions(): IEnumerable&lt;Question&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>212</y>
+      <w>140</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- playerDao
+1</panel_attributes>
+    <additional_attributes>290.0;930.0;10.0;930.0;10.0;250.0;230.0;250.0;230.0;10.0;330.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>328</x>
+      <y>208</y>
+      <w>268</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- quizChallengeDAO</panel_attributes>
+    <additional_attributes>520.0;150.0;520.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>328</x>
+      <y>200</y>
+      <w>492</w>
+      <h>228</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- quizDAO</panel_attributes>
+    <additional_attributes>1050.0;550.0;1150.0;550.0;1150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>204</x>
+      <y>108</y>
+      <w>92</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>AnswerDAO
+-
++ delete(answer: Answer)
++ findAll(): IEnumerable&lt;Answer&gt;
++ save(answer: Answer)
++ find(answerId: Integer): Answer
++ nextId(): Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>236</x>
+      <y>148</y>
+      <w>44</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- answerDAO</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>308</x>
+      <y>112</y>
+      <w>136</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>QuizParticipationDAO
+-
++ delete(quizParticipation: QuizParticipation)
++ findAll(): IEnumerable&lt;QuizPartition&gt;
++ save(quizParticipation: QuizParticipation)
++ find(quizParticipationId: Integer): QuizParticipation
++ nextId(): Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>152</y>
+      <w>80</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- quizParticipationDAO</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>476</x>
+      <y>144</y>
+      <w>108</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>ChallengesActivity
+-
+# onCreate(savedInstanceState: Bundle)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>436</x>
+      <y>172</y>
+      <w>80</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;180.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>776</x>
+      <y>52</y>
+      <w>204</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+ChallengesView
+-
++ getUsername(): String
++ getMyChallenges(): ListView
++ getIncomingChallenges(): ListView
++ getClock(): String
++ setMyChallenges(myChallenges :IEnumerable&lt;QuizChallenge&gt;)
++ setIncomingChallenges(incomingChallenges: IEnumerable&lt;QuizChallenge&gt;)
++ setClock(time: String)
++ setUsername()
++ startDualActivity(challengeId: Integer)
++ showToast(value: String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>92</y>
+      <w>204</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>490.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>608</x>
+      <y>32</y>
+      <w>108</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>ChallengesPresenter
+-
++ initLists()
++ acceptChallenge(challengeId: Integer)
++ countdown()
++ cancelTimer()
++ startDual()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>556</x>
+      <y>56</y>
+      <w>60</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0;10.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>156</y>
+      <w>276</w>
+      <h>284</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- quizDAO</panel_attributes>
+    <additional_attributes>420.0;690.0;610.0;690.0;610.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>232</x>
+      <y>164</y>
+      <w>612</w>
+      <h>480</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- quizDAO</panel_attributes>
+    <additional_attributes>10.0;1110.0;10.0;1180.0;1510.0;1180.0;1510.0;10.0;880.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>396</x>
+      <y>28</y>
+      <w>152</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>QuestionDAO
+-
++ delete(question: Question)
++ findAll(): IEnumerable&lt;Question&gt;
++ save(question: Question)
++ find(questionId: Integer): Question
++ nextId(): Integer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>712</x>
+      <y>56</y>
+      <w>72</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+- challengesView
+1</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>252</x>
+      <y>56</y>
+      <w>116</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>QuestionService
+-
++ questionReader()
++ setCategory(category: String)
++ setDifficultyLvl(difficulty: String)
++ getQuestions(): IEnumerable&lt;Question&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>364</x>
+      <y>84</y>
+      <w>132</w>
+      <h>68</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;10.0;310.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>516</x>
+      <y>72</y>
+      <w>12</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>128</x>
+      <y>80</y>
+      <w>60</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Inflates&gt;&gt;
+activity_dual.xml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>92</y>
+      <w>76</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0;170.0;190.0;170.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>652</x>
+      <y>224</y>
+      <w>80</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Inflates&gt;&gt;
+activity_challenges.xml</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>172</y>
+      <w>132</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>310.0;130.0;310.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>412</x>
+      <y>188</y>
+      <w>40</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>Question</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>424</x>
+      <y>164</y>
+      <w>60</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>684</x>
+      <y>260</y>
+      <w>40</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>Player</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>700</x>
+      <y>268</y>
+      <w>12</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>724</x>
+      <y>276</y>
+      <w>40</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>QuizCategory</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>732</x>
+      <y>284</y>
+      <w>12</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>852</x>
+      <y>312</y>
+      <w>52</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>DifficultyLevel</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>852</x>
+      <y>328</y>
+      <w>52</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>QuizChallenge</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>756</x>
+      <y>316</y>
+      <w>104</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>240.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>756</x>
+      <y>324</y>
+      <w>104</w>
+      <h>16</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>240.0;20.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>248</x>
+      <y>220</y>
+      <w>48</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;50.0;100.0;10.0</additional_attributes>
+  </element>
+</diagram>

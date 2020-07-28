@@ -1,0 +1,15 @@
+library ieee;
+use work.all,ieee.std_logic_1164.all;
+
+entity SixteenBitAlu is
+	port(a,b,ain,bin,cin    : in std_logic_vector(0 to 15);
+		 opr 				: in std_logic_vector(0 to 2);
+		 cout,result		: out  std_logic_vector(0 to 15);
+		 overflow			: out std_logic);
+end SixteenBitAlu;
+
+
+--architecture structural of SixteenBitAlu is
+
+
+	

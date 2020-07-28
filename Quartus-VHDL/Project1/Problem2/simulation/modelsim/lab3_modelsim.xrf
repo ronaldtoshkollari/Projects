@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/hp/Desktop/Ergasia/quartus/Problem2/lab3.bdf
+source_file = 1, C:/Users/hp/Desktop/Ergasia/quartus/Problem2/Waveform.vwf
+source_file = 1, ask3.vhd
+source_file = 1, C:/Users/hp/Desktop/Ergasia/quartus/Problem2/Waveform1.vwf
+source_file = 1, C:/Users/hp/Desktop/Ergasia/quartus/Problem2/db/lab3.cbx.xml
+design_name = lab3
+instance = comp, \x3~I , x3, lab3, 1
+instance = comp, \x4~I , x4, lab3, 1
+instance = comp, \x1~I , x1, lab3, 1
+instance = comp, \x2~I , x2, lab3, 1
+instance = comp, \inst~0 , inst~0, lab3, 1
+instance = comp, \f~I , f, lab3, 1

@@ -1,0 +1,9 @@
+entity solution IS
+    port (x1, x2, x3, x4 :IN BIT;
+	       f              : OUT BIT);
+END solution;
+
+ARCHITECTURE LogicFunc OF solution IS
+BEGIN
+f <= (NOT x1 AND x2) OR (NOT x1 AND x3) OR (x2 AND x3) OR (x1 AND NOT x2 AND NOT x3);
+END LogicFunc;

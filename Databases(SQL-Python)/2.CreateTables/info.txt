@@ -1,0 +1,6 @@
+<ΤΟΣΚΟΛΛΑΡΙ ΡΟΝΑΛΝΤ>-<3160244>
+<ΑΛΕΞΑΝΔΡΟΣ ΜΑΤΘΕΣ>-<3150260>
+Endpoint: dbaueb-1.chauqpwgwy22.us-east-1.rds.amazonaws.com
+Username: examiner
+Password: examiner
+Database: Airbnb

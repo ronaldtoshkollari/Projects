@@ -1,0 +1,20 @@
+LIBRARY ieee,my_func;
+USE ieee.std_logic_1164.all,my_package.basic_func.all;
+
+ENTITY OneBitAlu IS
+	PORT(a,b,Cin,Ain,Bin : IN std_logic;
+			Op : IN std_logic_vector(1 DOWNTO 0);
+			Cout,res : OUT std_logic);
+END OneBitAlu;
+
+ARCHITECTURE structure OF OneBitAlu IS
+	SIGNAL  s : std_logic_vector(0 TO 7);
+BEGIN
+	U0:mux2to1 PORT MAP(a,NOT a,Ain,s(0));
+	U1:mux2to1 PORT MAP(b,NOT b,Bin,s(1));
+	U2:myAND2 PORT MAP(s(0),s(1),s(2));
+	U3:myOR2 PORT MAP(s(0),s(1),s(3));
+	U4:fulladd PORT MAP(s(0),s(1),Cin,s(4),s(5));
+	U5:myXOR2 PORT MAP(s(0),s(1),s(6));
+	U6:mux4to1 PORT MAP(s(2),s(3),s(5),s(6),s(7));
+END structure;

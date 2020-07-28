@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+
+    <link rel="icon" href="/img/logo.jpg" />
+
+    <script src="/scripts/search.js"></script>
+    <title>Search Movies</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <div class="burger-menu">
+          <span class="burger-1"></span>
+          <span class="burger-2"></span>
+          <span class="burger-3"></span>
+        </div>
+
+        <div class="nav-links">
+          <i class="fa fa-arrow-left nav-back"></i>
+          <a href="/bookmarks" class="nav-item">Αγαπημένες Ταινίες</a>
+          <a href="/logout" class="nav-item">Αποσύνδεση</a>
+        </div>
+      </nav>
+
+      <!-- Main -->
+      <main>
+        <section class="section-a-search">
+          <!-- Search Area -->
+          <div class="section-a-search-text">
+            <h2><span>Μάθε τα πάντα για την αγαπημένη σου ταινία.</span></h2>
+          </div>
+
+          <div class="seaction-a-search-form">
+            <form
+              name="seaction-a-search-form"
+              id="search_form"
+              onsubmit="doNothing();"
+            >
+              <input
+                type="search"
+                class="search-area"
+                name="search-area"
+                placeholder="Κάνε αναζήτηση για την αγαπημένη σου ταινία εδώ"
+                autocomplete="off"
+                required
+              />
+            </form>
+          </div>
+
+          <!-- Search Results -->
+          <div class="search-results">
+            <div class="result-item">
+              <div class="result-item-image">
+                <img
+                  id="result_poster"
+                  src=""
+                  alt=""
+                  width="350"
+                  height="400"
+                />
+              </div>
+
+              <div class="result-item-data">
+                <p id="result-title" name="movie"></p>
+                <p id="result-plot"></p>
+                <p id="result-language"></p>
+                <a id="result-more" href="#modal_id">Περισσότερα</a>
+                <button id="result-bookmarks" onclick="addMovie()">
+                  Προσθήκη Στα Αγαπημένα
+                </button>
+                <span id="add_message"></span>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal" id="modal_id">
+                <div class="modal-content" style="height:100%; overflow-y:scroll">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2 id="movie-title"></h2>
+                  </div>
+                  <!-- Modal Body  -->
+                  <div class="modal-body">
+                    <img
+                      id="movie-poster"
+                      src=""
+                      alt=""
+                      width="350"
+                      height="400"
+                    />
+                    <p id="movie-year"></p>
+                    <p id="movie-rated"></p>
+                    <p id="movie-released"></p>
+                    <p id="movie-runtime"></p>
+                    <p id="movie-genre"></p>
+                    <p id="movie-director"></p>
+                    <p id="movie-writer"></p>
+                    <p id="movie-actors"></p>
+                    <p id="movie-plot"></p>
+                    <p id="movie-language"></p>
+                    <p id="movie-awards"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer id="search-footer">
+        <div class="footer-text">
+          <h2>
+            <span class="footer-text-span">
+              &copy; Mady by Jim & Roni.
+            </span>
+          </h2>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
