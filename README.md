@@ -1,7 +1,7 @@
 # Projects
 This reposetory is used to store my coding experience throught the 4 years that I spent at AUEB.
 ---
-- [Analysis-And-Design-Of-Information-Systems](https://github.com/roni3840/Projects/blob/master/Analysis-And-Design-Of-Information-Systems/info.MD)
+- [Analysis-And-Design-Of-Information-Systems](https://github.com/roni3840/Projects/tree/master/Analysis-And-Design-Of-Information-Systems)
 - [Artificial-Intelligence(Java)](https://github.com/roni3840/Projects/tree/master/Artificial-Intelligence(Java))
 - [C++](https://github.com/roni3840/Projects/tree/master/C%2B%2B)
 - [Computer-Human-Interaction(Java-Android)](https://github.com/roni3840/Projects/tree/master/Computer-Human-Interaction(Java-Android))
