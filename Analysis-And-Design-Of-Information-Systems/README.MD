@@ -4,7 +4,7 @@
 
   Example
 
-<img src="/img/Screenshot_1.png" alt="Screenshot_1" style="zoom:80%;" />
+<img src="https://github.com/roni3840/Projects/blob/master/Analysis-And-Design-Of-Information-Systems/img/Screenshot_1.png" alt="Screenshot_1" style="zoom:80%;" />
 
 
 
