@@ -4,7 +4,7 @@
 
   Example
 
-<img src="\img\Screenshot_1.png" alt="Screenshot_1" style="zoom:80%;" />
+<img src="/img/Screenshot_1.png" alt="Screenshot_1" style="zoom:80%;" />
 
 
 
