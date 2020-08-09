@@ -16,7 +16,5 @@ Bellow are some examples of our UI of the application.
 
 Bellow is a video example of the application.
 
-```html
-<iframe width="1280" height="721" src="https://www.youtube.com/embed/yy0XBDhP_QE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-```
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yy0XBDhP_QE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
