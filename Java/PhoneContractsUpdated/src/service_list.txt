@@ -1,0 +1,72 @@
+SERVICES_LIST
+{
+	SERVICE  
+	{
+		SERVICE_NAME  Programm Contract 0
+		TYPE  ProgrammContract
+		MONTHLY_PRICE  12.0
+		FREE_MOBILE_MINUTES  500.0
+		FREE_FIXED_MINUTES  500.0
+		FREE_SMS  1000
+		MOBILE_COST  1.2
+		FIXED_COST  0.7
+		SMS_COST  0.3
+	}
+	SERVICE  
+	{
+		SERVICE_NAME  Programm Contract 1
+		TYPE  ProgrammContract
+		MONTHLY_PRICE  7.0
+		FREE_MOBILE_MINUTES  150.0
+		FREE_FIXED_MINUTES  150.0
+		FREE_SMS  300
+		MOBILE_COST  1.2
+		FIXED_COST  0.7
+		SMS_COST  0.3
+	}
+	SERVICE  
+	{
+		SERVICE_NAME  Card Contract 0
+		TYPE  CardContract
+		MONTHLY_PRICE  15.0
+		FREE_MOBILE_MINUTES  1500.0
+		FREE_FIXED_MINUTES  1500.0
+		FREE_SMS  2000
+		MOBILE_COST  1.0
+		FIXED_COST  0.5
+		SMS_COST  0.2
+		MONTHLY_TOTAL 30.0
+	}
+	SERVICE  
+	{
+		SERVICE_NAME  Card Contract 1
+		TYPE  CardContract
+		MONTHLY_PRICE  10.0
+		FREE_MOBILE_MINUTES  1200.0
+		FREE_FIXED_MINUTES  1200.0
+		FREE_SMS  1500
+		MOBILE_COST  1.0
+		FIXED_COST  0.5
+		SMS_COST  0.2
+		MONTHLY_TOTAL 20.0
+	}
+	SERVICE  
+	{
+		SERVICE_NAME  Mobile Internet 0
+		TYPE  MobileInternet
+		MONTHLY_PRICE  20.0
+		FREE_DATA  5000.0
+		DATA_COST  2.3
+	}
+	SERVICE  
+	{
+		SERVICE_NAME  Mobile Internet 1
+		TYPE  MobileInternet
+		MONTHLY_PRICE  10.0
+		FREE_DATA  3000.0
+		DATA_COST  2.3
+	}
+}
+Number of Programm Contract  2
+Number of Card Contract 2
+Number of Mobile Internet 2
