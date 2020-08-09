@@ -20,10 +20,10 @@
 
 [Απαιτήσεις Λογισμικού](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/software-requirements.md)
 
-[Διάγραμμα Κλάσεων](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/class-diagram-design.md)
+[Διάγραμμα Κλάσεων](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/JUnit%20Test/class-diagram-design.md)
 
-[Διάγραμμα Κλάσεων Περιγραφή Στατικής Όψης](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/class-diagram-design.md)
+[Διάγραμμα Κλάσεων Περιγραφή Στατικής Όψης](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/JUnit%20Test/class-diagram-design.md)
 
-[JUnit Test](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/test-coverage.md)
+[JUnit Test](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/JUnit%20Test/test-coverage.md)
 
 [System Design of Android](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/system_design_android.md)
