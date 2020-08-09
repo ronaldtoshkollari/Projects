@@ -19,6 +19,6 @@
 
 # Αποτελέσματα των Τεστ
 
-![MVP_Login_Sequence](https://gitlab.com/softeng-2019-20/quiz-challenge/-/raw/master/requirements/JUnit%20Test/tests_r4.png)
+![MVP_Login_Sequence](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/JUnit%20Test/tests_r4.png)
 
 
