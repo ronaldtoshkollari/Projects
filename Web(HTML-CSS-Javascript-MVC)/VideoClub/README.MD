@@ -2,19 +2,19 @@
 
 In this project we created a full stack web applications. First of all we created front-end that is the UI. UI was created with HTML-CSS and added some JavaScript code in order to retrieve JSON files from an movie API. Bellow are some examples:
 
-![Screenshot_1](C:\Users\Roni\Desktop\Everything\MyProjects\Web(HTML-CSS-Javascript-MVC)\VideoClub\img\Screenshot_1.png)
+![Screenshot_1](https://github.com/roni3840/Projects/blob/master/Web(HTML-CSS-Javascript-MVC)/VideoClub/img/Screenshot_1.png)
 
-![Screenshot_2](C:\Users\Roni\Desktop\Everything\MyProjects\Web(HTML-CSS-Javascript-MVC)\VideoClub\img\Screenshot_2.png)
+![Screenshot_2](https://github.com/roni3840/Projects/blob/master/Web(HTML-CSS-Javascript-MVC)/VideoClub/img/Screenshot_2.png)
 
-![Screenshot_3](C:\Users\Roni\Desktop\Everything\MyProjects\Web(HTML-CSS-Javascript-MVC)\VideoClub\img\Screenshot_3.png)
+![Screenshot_3](https://github.com/roni3840/Projects/blob/master/Web(HTML-CSS-Javascript-MVC)/VideoClub/img/Screenshot_3.png)
 
-![Screenshot_4](C:\Users\Roni\Desktop\Everything\MyProjects\Web(HTML-CSS-Javascript-MVC)\VideoClub\img\Screenshot_4.png)
+![Screenshot_4](https://github.com/roni3840/Projects/blob/master/Web(HTML-CSS-Javascript-MVC)/VideoClub/img/Screenshot_4.png)
 
-![Screenshot_5](C:\Users\Roni\Desktop\Everything\MyProjects\Web(HTML-CSS-Javascript-MVC)\VideoClub\img\Screenshot_5.png)
+![Screenshot_5](https://github.com/roni3840/Projects/blob/master/Web(HTML-CSS-Javascript-MVC)/VideoClub/img/Screenshot_5.png)
 
-![Screenshot_6](C:\Users\Roni\Desktop\Everything\MyProjects\Web(HTML-CSS-Javascript-MVC)\VideoClub\img\Screenshot_6.png)
+![Screenshot_6](https://github.com/roni3840/Projects/blob/master/Web(HTML-CSS-Javascript-MVC)/VideoClub/img/Screenshot_6.png)
 
-![Screenshot_7](C:\Users\Roni\Desktop\Everything\MyProjects\Web(HTML-CSS-Javascript-MVC)\VideoClub\img\Screenshot_7.png)
+![Screenshot_7](https://github.com/roni3840/Projects/blob/master/Web(HTML-CSS-Javascript-MVC)/VideoClub/img/Screenshot_7.png)
 
 At the Back-End we used MVC in java in order to create those tasks :
 
