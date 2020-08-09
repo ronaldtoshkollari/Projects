@@ -16,14 +16,14 @@
 επιδόσεις ανά κατηγορία ερωτήσεων και επίπεδο δυσκολίας. 
 
 
-[Σύντομη Περιγραφή περιπτώσεων χρήσης](https://gitlab.com/softeng-2019-20/quiz-challenge/-/blob/master/requirements/use-case-model.md)
+[Σύντομη Περιγραφή περιπτώσεων χρήσης](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/use-case-model.md)
 
-[Απαιτήσεις Λογισμικού](https://gitlab.com/softeng-2019-20/quiz-challenge/-/blob/master/requirements/software-requirements.md)
+[Απαιτήσεις Λογισμικού](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/software-requirements.md)
 
-[Διάγραμμα Κλάσεων](https://gitlab.com/softeng-2019-20/quiz-challenge/-/blob/master/requirements/class-diagram-design.md)
+[Διάγραμμα Κλάσεων](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/class-diagram-design.md)
 
-[Διάγραμμα Κλάσεων Περιγραφή Στατικής Όψης](https://gitlab.com/softeng-2019-20/quiz-challenge/-/blob/master/requirements/JUnit%20Test/class-diagram-design.md)
+[Διάγραμμα Κλάσεων Περιγραφή Στατικής Όψης](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/class-diagram-design.md)
 
-[JUnit Test](https://gitlab.com/softeng-2019-20/quiz-challenge/-/blob/master/requirements/JUnit%20Test/test-coverage.md)
+[JUnit Test](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/test-coverage.md)
 
-[System Design of Android](https://gitlab.com/softeng-2019-20/quiz-challenge/-/blob/master/requirements/system_design_android.md)
+[System Design of Android](https://github.com/roni3840/Projects/blob/master/Software-Technology(Android)/QuizApp/requirements/system_design_android.md)
