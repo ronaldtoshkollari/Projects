@@ -142,21 +142,21 @@ Science
 
 Tech Company
 
-![Screenshot_63](C:\Users\Roni\Desktop\Everything\MyProjects\HTML-CSS\img\Screenshot_63.png)
+![Screenshot_63](https://github.com/roni3840/Projects/blob/master/HTML-CSS/img/Screenshot_63.png)
 
-![Screenshot_64](C:\Users\Roni\Desktop\Everything\MyProjects\HTML-CSS\img\Screenshot_64.png)
+![Screenshot_64](https://github.com/roni3840/Projects/blob/master/HTML-CSS/img/Screenshot_64.png)
 
-![Screenshot_65](C:\Users\Roni\Desktop\Everything\MyProjects\HTML-CSS\img\Screenshot_65.png)
+![Screenshot_65](https://github.com/roni3840/Projects/blob/master/HTML-CSS/img/Screenshot_65.png)
 
-![Screenshot_66](C:\Users\Roni\Desktop\Everything\MyProjects\HTML-CSS\img\Screenshot_66.png)
+![Screenshot_66](https://github.com/roni3840/Projects/blob/master/HTML-CSS/img/Screenshot_66.png)
 
-![Screenshot_67](C:\Users\Roni\Desktop\Everything\MyProjects\HTML-CSS\img\Screenshot_67.png)
+![Screenshot_67](https://github.com/roni3840/Projects/blob/master/HTML-CSS/img/Screenshot_67.png)
 
-![Screenshot_68](C:\Users\Roni\Desktop\Everything\MyProjects\HTML-CSS\img\Screenshot_68.png)
+![Screenshot_68](https://github.com/roni3840/Projects/blob/master/HTML-CSS/img/Screenshot_68.png)
 
-![Screenshot_69](C:\Users\Roni\Desktop\Everything\MyProjects\HTML-CSS\img\Screenshot_69.png)
+![Screenshot_69](https://github.com/roni3840/Projects/blob/master/HTML-CSS/img/Screenshot_69.png)
 
-![Screenshot_70](C:\Users\Roni\Desktop\Everything\MyProjects\HTML-CSS\img\Screenshot_70.png)
+![Screenshot_70](https://github.com/roni3840/Projects/blob/master/HTML-CSS/img/Screenshot_70.png)
 
 
 
